@@ -258,7 +258,7 @@
     width: 4vmin;
 }
 
-@media (max-width:1550px) {
+@media (max-width:1350px) {
     .project_container {
         display: flex;
         flex-direction: column;
