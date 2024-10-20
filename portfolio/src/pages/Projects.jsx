@@ -71,7 +71,7 @@ const projectsInfoArray = [
     links: ["https://github.com/NickRoach/blackheath-wind-meter",""]
     },
 
-    { name: "Affordable Commute Calculator", image: `${image5}`, text: "A team project react web app that looks up property sales in Sydney relative to a a user defined point of interest and sorts according to travel time. Authenicated users can create and edit a list of favourited and saved properties. ",
+    { name: "Affordable Commute Calculator", image: `${image5}`, text: "A team project react app that looks up property sales in Sydney relative to a a user defined point of interest and sorts according to travel time. Authenicated users can create and edit a list of favourited and saved properties. ",
       technologies: [ 'MongoDb', 'Express.js', 'React', 'Node.js'], 
       keyPointOne: [ { title: "Collaboration", 
         text: ["Daily huddles to discuss planning, progress and self allocate development. We used git branchs to develop in silo and then merged with main at the end of the day.", "Some tasks we used pair programming to draw on each others knowledge and skill set simultaneously." ]}

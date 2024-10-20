@@ -43,7 +43,7 @@
 }
 
 .home-text p {
-    color:var(--green);
+    color:var(--light-purple);
     width: 100%;
     font-size: 3vmin;
     line-height: 5.5vmin;

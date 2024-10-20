@@ -10,7 +10,7 @@ const Home = () => {
                 
                 <div className="home-punchline-title">
                     <h2>G'day! I'm Dave.</h2>
-                    <p>I'm a collaborative Software Engineer from Sydney</p>
+                    <p>I'm a creative Software Engineer from Sydney</p>
                 </div>
 
                 <div className="home-image">

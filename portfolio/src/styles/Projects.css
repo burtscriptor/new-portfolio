@@ -5,7 +5,6 @@
 }
 
 .projects {
-    height: 100vmin;
     width: 100%;
     display:flex;
     flex-direction: column;
@@ -84,7 +83,6 @@
     padding-bottom: 5vmin;
     padding-left: 5vmin;
     padding-right: 5vmin;
-    height: 85vmin; /* play with the height*/
 }
 
 .text_container {
@@ -128,6 +126,7 @@
 .project_text {
     display: flex;
     flex-direction: column;
+    width: 60vmin;
 }
 
 .project_image {
@@ -166,6 +165,7 @@
 
 .project_descripton p {
     max-width: 45ch;
+    min-width: 50vmin;
     height: 20vmin;
     font-size: 2vmin;
     color:var(--green);
@@ -177,7 +177,8 @@
     margin-top: 2vmin;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    min-width: none;
+    min-height: 10vmin;
     justify-content: space-around;
 } 
 
@@ -187,7 +188,7 @@
     padding-right: 2vmin;
     padding-bottom:1vmin;
     border-radius: 12px;
-    width: fit-content;
+     width: fit-content;
     height: min-content;
     text-align: center;
     font-size: 2vmin;
@@ -203,7 +204,6 @@
 }
 
 .p_c_child_right {
-  
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -272,6 +272,11 @@
     .p_c_child_right {
         gap:2vmin;
         padding-bottom: 4vmin;
+        height: 60vmin;
+    }
+
+    .p_c_child_right p {
+        
     }
 
     .next_button:hover {
