@@ -1,6 +1,6 @@
 button {
    border:0.2vmin solid white;
-    margin-top: 2vmin;
+    margin-top: 1vmin;
     margin-bottom: 1vmin;
     background: linear-gradient(45deg, var(--green), var(--light-blue));
     border: none;
