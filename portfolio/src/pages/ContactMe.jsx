@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import "../styles/Contact.css";
 import Animation from "../components/Animation";
+import DownloadCv from "../components/DownloadCv";
+import { Link as LinkScroll } from "react-scroll";
 
 const icon1 = "https://burtscriptor.github.io/portfolio-images/mail.png";
 const icon2 = "https://burtscriptor.github.io/portfolio-images/linkedin.png";
@@ -17,7 +19,7 @@ const Contact = () => {
                 setIsInView(entry.isIntersecting);
             },
             {
-                root: null, 
+                root: null,
                 threshold: 0.1,
             }
         );
@@ -39,12 +41,10 @@ const Contact = () => {
                 <div className="dog">
                     <h3>Let's chat!</h3>
                 </div>
-                <div className="coffee">
-                    <p>Want to brainstorm? Let's queue up a jam.</p>
-                </div>
+
                 <div className="do-it">
                     <a
-                        href="mailto:david.burt.jnr@example.com"
+                        href="mailto:david.burt.jnr@gmail.com"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -53,18 +53,22 @@ const Contact = () => {
                 </div>
             </div>
 
-             <div className="contact-body" ref={animationRef}>
-                {isInView && <Animation className="contact-animation" loading="lazy" />}
-            </div> 
+
 
             <div className="contact-text">
-                <p>Growing, gaining, and getting better each day.</p>
+                <h3>From small to big, not knowing to knowing</h3>
+
             </div>
 
-            <div className="contact-email">
-                <p>david.burt.jnr@gmail.com</p>
+            <div className="contact-body" ref={animationRef}>
+                {isInView && <Animation className="contact-animation" loading="lazy" />}
             </div>
-
+            <DownloadCv />
+            <div className="link-scroll">
+                <LinkScroll to="home" smooth={true} duration={500}> 
+                         >> Back to the top
+                </LinkScroll>
+            </div>
             <div className="contact-icons">
                 <a
                     href="https://www.linkedin.com/in/davejayburt"
@@ -90,7 +94,10 @@ const Contact = () => {
             </div>
 
             <div className="rights">
-                <p>Dave Burt 2024 | All Rights Reserved</p>
+                <p>Dave Burt 2024 | All Rights Reserved
+                    | Website built and deployed from scratch
+                    | Particles background adapted from https://github.com/BobbySmurf/particles
+                </p>
             </div>
         </main>
     );

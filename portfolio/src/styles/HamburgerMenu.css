@@ -3,33 +3,33 @@
     flex-direction: column;
     cursor: pointer;
     position: fixed;
-    top: 6vmin;
-    right:5vmin;
+    top: 5vmin;
+    left:5vmin;
   }
   
   .hamburger-menu .bar {
     width: 5vmin;
     height: 0.5vmin;
-    background-color:var(--green);
+    background: linear-gradient(45deg, var(--green), var(--navy));
     margin: 0.5vmin 0;
     transition: 0.4s;
   }
+
+  
   
   .nav_bar {
-    border:0.2vmin solid rgba(195, 198, 207, 0.629);
-    border-radius: 15px;
+   
    position: fixed;
-    height: 10vmin;
-    top:4.5vmin;
-    right:11vmin;
+   
+    top:10vmin;
+    
    display:flex;
-   flex-direction: row;
+   flex-direction: column;
    justify-content: start;
-   align-items: center;
+   align-items: start;
    gap:5vmin;
     padding-right:5vmin;
     padding-left: 5vmin;
-    background-color: yellow;
     z-index:10;
 }
 

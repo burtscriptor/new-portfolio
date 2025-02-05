@@ -2,7 +2,7 @@ button {
    border:0.2vmin solid white;
     margin-top: 1vmin;
     margin-bottom: 1vmin;
-    background: linear-gradient(45deg, var(--green), var(--light-blue));
+    background: linear-gradient(45deg, var(--green), var(--navy));
     border: none;
     border-radius: 50px;
     color: white;
@@ -13,15 +13,15 @@ button {
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 button:hover,
 button:focus {
    
-    background: linear-gradient(45deg, #5a47e3, #2e1bbd);
-    transform: translateY(-2px);
+    background: linear-gradient(45deg, var(--navy), var(--green));
+    transform: translateY(-1px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    border: 0.2vmin solid red;
 }
 
 button:active {

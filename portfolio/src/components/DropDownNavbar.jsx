@@ -8,12 +8,12 @@ const DropDownNavBar = ({ isOpen, handleToggle }) => {
            
 
                 <LinkScroll to="home_page" smooth={true} duration={500}>
-                     Intro
+                     Greetings!
                 </LinkScroll>
           
            
                 <LinkScroll to="about_me" smooth={true} duration={500}> 
-                About Me
+                About
                 </LinkScroll>
           
            

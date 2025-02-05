@@ -1,16 +1,11 @@
 .about-me {
+    padding-top: 5vmin;
     height: fit-content;
     width: 100%;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-
-.about-header h1 {
-    font-size: 8vmin;
-    color: var(--light-blue)
 }
 
 .about-profile-pic img {
@@ -22,46 +17,16 @@
     opacity: 0;
 }
 
-.home-punchline {
-    margin-top: 5vmin;
-}
-
 .home-punchline h2 {
-    width: 100%;
-    text-align: center;
-    font-size: 8vmin;
+    margin-bottom: 4vmin;
+
 }
-
-.about-me-text {
-    height: fit-content;
-    width: fit-content;
-    padding-top: 5vmin;
-    display:grid;
-    grid-template-rows: auto 1fr; 
-    padding-left: 5vmin;
-    padding-right: 5vmin;
-}
-
-.about-me-text-container-one {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-
-.about-me-text-container-one p {
-    color: var(--light-purple);
-    font-size: 2vmin;
-}
-
-.about-me-text-container-one h2 {
-    font-size: 8vmin;
-    padding-top: 1vmin;
-}
-
 .about-me-text-container-two {
     display: grid;
     grid-template-columns: auto 1fr;
+    gap:5vmin;
+    background: linear-gradient(45deg, var(--navy), var(--green));
+    border-radius: 14px;
 }
 
 .child-one, .child-two {
@@ -70,40 +35,31 @@
     align-items:center;
     justify-content: center;
     padding-top: 3vmin;
+    padding-bottom: 3vmin;
 }
 
 .child-one {
-    gap:4vmin;
+    padding-right: 5vmin;
 }
 
-.links {
-    display:flex;
-    justify-content: left;
-    width: 100%;
-    flex-direction: column;
-}
 
-.links a {
-    font-size: 2vmin;
-}
 
 .child-one p {
     text-align: left;
-    line-height: 7vmin;
-    font-size: 5vmin;
-    color:grey;
-    max-width: 45ch;
+    line-height: 4vmin;
+    max-width: 60ch;
 }
 
 
 .child-two {
     align-items: end;
-    padding-left: 10vmin;
+    padding-left: 5vmin;
 }
 
 .child-two img {
     height: 30vmin;
     width: 30vmin;
+    border-radius: 14px;
 }
 
 .transferable-skills {
@@ -123,7 +79,6 @@
 .skills-header h2 {
     width: 100%;
     text-align: left;
-    font-size: 6vmin;
     padding-top: 1vmin;
 }
 
@@ -138,10 +93,6 @@
     gap:5vmin;
 }
 
-.skill-card p {
-    font-size: 2vmin;
-    color:white;
-}
 
 .skill-card {
     width: 22vmin;
@@ -188,12 +139,12 @@
 }
 
 .technology-header p {
-    font-size: 1.5vmin;
+
     color: var(--light-purple);
 }
 
 .technology-header h2 {
-    font-size: 5vmin;
+   
     padding-top:1.5vmin;
 }
 
@@ -218,7 +169,7 @@
 }
 
 .technology-icon p {
-    font-size: 2vmin;
+ 
     color:black;
     z-index: 99999;
 }

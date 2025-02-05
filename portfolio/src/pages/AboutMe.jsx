@@ -1,65 +1,77 @@
 import React, { useEffect, useState } from "react";
 import "../styles/AboutMe.css";
-const image1 = "https://burtscriptor.github.io/portfolio-images/whaleof.webp";
-const image2 = "https://burtscriptor.github.io/portfolio-images/wollongongtheband.webp";
-const image3 =  "https://burtscriptor.github.io/portfolio-images/the_real_bean_beanie.png";
+const image3 = "https://burtscriptor.github.io/portfolio-images/dave_ai_1.png";
 
 
 const techIcons = [
-  { name: "HTML 5",
+  {
+    name: "HTML 5",
     src: "https://burtscriptor.github.io/portfolio-images/html.png",
     alt: "HTML 5 icon"
   },
 
-  { name: "CSS 3",
+  {
+    name: "CSS 3",
     src: "https://burtscriptor.github.io/portfolio-images/css-3.png",
     alt: "CSS 3 icon"
   },
-  { name: "Django",
+  {
+    name: "Django",
     src: "https://burtscriptor.github.io/portfolio-images/django.png",
     alt: "Django icon"
   },
-  { name: "Git",
+  {
+    name: "Git",
     src: "https://burtscriptor.github.io/portfolio-images/git.png",
     alt: "Git icon"
   },
-  { name: "JavaScript",
+  {
+    name: "JavaScript",
     src: "https://burtscriptor.github.io/portfolio-images/js.png",
     alt: "JavaScript icon"
   },
-  { name: "MongoDB",
+  {
+    name: "MongoDB",
     src: "https://burtscriptor.github.io/portfolio-images/mongoDB.png",
     alt: "MongoDB icon"
   },
-  { name: "Node.js",
+  {
+    name: "Node.js",
     src: "https://burtscriptor.github.io/portfolio-images/nodejs.png",
     alt: "Node.js icon"
   },
-  { name: "Python",
+  {
+    name: "Python",
     src: "https://burtscriptor.github.io/portfolio-images/python.png",
     alt: "Python icon"
   },
-  { name: "React.js",
+  {
+    name: "React.js",
     src: "https://burtscriptor.github.io/portfolio-images/react.png",
     alt: "React.js icon"
   },
-  { name: "Tailwind",
+  {
+    name: "Tailwind",
     src: "https://burtscriptor.github.io/portfolio-images/tailwind.png",
     alt: "Tailwind icon"
   },
-  { name: "PostgreSQL",
+  {
+    name: "PostgreSQL",
     src: "https://burtscriptor.github.io/portfolio-images/postgresql.png",
     alt: "PostgreSQL icon"
   },
-  { name: "Three.js",
+  {
+    name: "Three.js",
     src: "https://burtscriptor.github.io/portfolio-images/three.png",
     alt: "Three.js icon"
   },
-  { name: "Express.Js",
+  {
+    name: "Express.Js",
     src: "https://burtscriptor.github.io/portfolio-images/bootstrap.png",
     alt: "Express.js icon"
   },
-  { name: "Figma",
+  {
+    name: "Figma",
     src: "https://burtscriptor.github.io/portfolio-images/figma.png",
     alt: "Figma icon"
   }
@@ -67,10 +79,10 @@ const techIcons = [
 
 
 const skills = [
-  {name: "Problem Solving", src: "https://burtscriptor.github.io/portfolio-images/solution.png", alt: "Problem Solving icon"},
-  {name: "Communication", src: "https://burtscriptor.github.io/portfolio-images/communication.png", alt: "Communication icon"},
-  {name: "Collaboration", src: "https://burtscriptor.github.io/portfolio-images/teamwork.png", alt: "Collabortion icon"},
-  {name: "Creative Solutions", src: "https://burtscriptor.github.io/portfolio-images/solution%20copy.png", alt: "Creative Solutions icon"}
+  { name: "Problem Solving", src: "https://burtscriptor.github.io/portfolio-images/solution.png", alt: "Problem Solving icon" },
+  { name: "Communication", src: "https://burtscriptor.github.io/portfolio-images/communication.png", alt: "Communication icon" },
+  { name: "Collaboration", src: "https://burtscriptor.github.io/portfolio-images/teamwork.png", alt: "Collabortion icon" },
+  { name: "Creative Solutions", src: "https://burtscriptor.github.io/portfolio-images/solution%20copy.png", alt: "Creative Solutions icon" }
 ];
 
 
@@ -122,191 +134,106 @@ const AboutMe = () => {
   }, [index]);
 
   return (
-    <>    
-   
-    <main className="about-me">
-      <div className="about-banner-image">
-        <div className="home-punchline">
-          <h2>About.</h2>
-        </div>
-      </div>
+    <>
 
-      <div className="about-me-text">
-        <div className="about-me-text-container-one">
-          <p>INTRODUCTION</p>
-          <h2>Developer.</h2>
+      <main className="about-me">
+
+        <div className="home-punchline">
+          <h2>About</h2>
         </div>
 
         <div className="about-me-text-container-two">
-          <div className="child-one">
-            <p>
-            I'm a junior software developer based in Sydney. 
-            After 7 years in healthcare as a registered nurse and teacher, 
-            I shifted to software development, driven by my 
-            passion for technology. I bring a fresh perspective to 
-            tech with my collaborative and detail-oriented approach. 
-            I love tweaking CSS properties and creating 
-            routes between frontends and backends.
-            </p>
-
-            <p>
-              I deeply value my career and personal life. In both, I seek out challenging and
-              rewarding situations. I enjoy connecting and collaborating with people on
-              intellectual and creative levels. My colleagues know me as a problem-solver, a
-              quick learner, and a friendly team member.
-            </p>
-          </div>
-
           <div className="child-two">
             <img
               src={image3}
               alt="Profile of Dave"
             />
           </div>
-        </div>
-      </div>
-
-      <div className="about-me-text">
-        <div className="about-me-text-container-one">
-          <p>DEEPER DIVE</p>
-          <h2>Climber.</h2>
-        </div>
-
-        <div className="about-me-text-container-two">
           <div className="child-one">
+            <h4>FAQ</h4>
             <p>
-            I’ve been an outdoor enthusiast for 12 years, starting on the small 
-            cliffs of my hometown and advancing to major challenges like 
-            'The Nose' of El Capitan. As part of a team of two, I developed 
-            climbing routes such as 'Whale of a Time' and other 
-            routes in the Illawarra area. This work involved problem-solving, 
-            coordinating logistics, and adhering to safety standards. 
-            Each year, hundreds of climbers tackle 'Whale of a Time' 
-            safely, reflecting the success of our efforts.
+              1. What was your previous career before software development?
+              Worked as a Registered Nurse for seven years, specialising in emergency triage, and multidisciplinary care planning.
             </p>
-            <div className="links">
-              <a
-                href="https://www.thecrag.com/en/climbing/australia/wollongong/route/1124677161/ascents"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                The Crag, 'Whale of a time'
-              </a>
-            </div>
-          </div>
-
-          <div className="child-two">
-            <img src={image1} alt="Dave climbing with stunning coast views" />
-          </div>
-        </div>
-      </div>
-
-      <div className="about-me-text">
-        <div className="about-me-text-container-one">
-          <p>DEEPER DIVE</p>
-          <h2>Musician.</h2>
-        </div>
-
-        <div className="about-me-text-container-two">
-          <div className="child-one">
             <p>
-            I thrive on expressing myself and collaborating with other musicians. 
-            For over ten years, I've been a key member of 'Wollongong (the band),
-            ' where teamwork and collective creativity are at the heart of what we do. 
-            Together, we’ve released 109 albums on Spotify and Bandcamp. Our collaborative 
-            spirit has also earned us local recognition, including a recent highlight
-             where F1 driver Charles Leclerc featured one of our tracks in a 
-             promo reel just before his win at Monza.
+              2. What motivated you to transition into software development?
+              A passion for technology and problem-solving. Saw how tech could improve healthcare and wanted to apply those skills in a new, impactful way.
+            </p>
+            <p>
+              3. What training have you completed for software development?
+              Completed a Software Engineering Immersive course at General Assembly, gaining experience in full-stack development, React, Node.js, and databases.
+            </p>
+            <p>
+              4. What are your key strengths in tech?
+              Known for strong communication skills, teamwork, and quick learning. Background in nursing provides an analytical and detail-oriented approach to problem-solving.
+            </p>
+            <p>
+              5. What kind of roles are you looking for?
+              Focused on full-stack development and QA/testing roles, leveraging problem-solving skills and growing as a developer.
             </p>
 
-           
-            <div className="links">
-              <a
-                href="https://www.illawarramercury.com.au/story/8752767/charles-leclercs-secret-weapon-at-monza-a-wollongong-band/#comments"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Charles Leclerc and Wollongong
-              </a>
-              <a
-                href="https://www.illawarramercury.com.au/story/8018081/wollongong-the-band-celebrates-100-albums-in-10-years/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                100 albums
-              </a>
-              <a
-                href="https://www.illawarramercury.com.au/story/7917217/uci-the-album-wollongong-the-band-creates-rocknroll-memorabilia-for-fans/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Union Cycliste Internationale (UCI) and Wollongong
-              </a>
+
+          </div>
+
+
+        </div>
+
+
+
+
+        <div className="transferable-skills">
+          <div className="skills-header">
+            <h2>Transferable skills.</h2>
+          </div>
+
+          <div className="skill-cards">{cards}</div>
+        </div>
+
+        <div className="transferable-skills">
+          <div className="skills-header">
+            <h2>Developer skills.</h2>
+          </div>
+
+          <div className="skill-cards">
+            <div className="skill-card">
+              <img
+                src="https://burtscriptor.github.io/portfolio-images/web-development.png"
+                alt="Icon for web development"
+              />
+              <p>Web Development</p>
+            </div>
+
+            <div className="skill-card">
+              <img
+                src="https://burtscriptor.github.io/portfolio-images/server-side.png"
+                alt="Icon for communication"
+              />
+              <p>Server Side Construction</p>
+            </div>
+            <div className="skill-card">
+              <img
+                src="https://burtscriptor.github.io/portfolio-images/mobile.png"
+                alt="Icon for collaboration"
+              />
+              <p>Mobile App Development</p>
+            </div>
+            <div className="skill-card">
+              <img
+                src="https://burtscriptor.github.io/portfolio-images/debugging.png"
+                alt="Icon for creative solutions"
+              />
+              <p>Quality Assurance</p>
             </div>
           </div>
-
-          <div className="child-two">
-            <img src={image2} alt="Dave and band members of Wollongong the band" />
-          </div>
-        </div>
-      </div>
-
-      <div className="transferable-skills">
-        <div className="skills-header">
-          <p>SKILL SETS</p>
-          <h2>Transferable skills.</h2>
         </div>
 
-        <div className="skill-cards">{cards}</div>
-      </div>
-
-      <div className="transferable-skills">
-        <div className="skills-header">
-          <p>SKILL SETS</p>
-          <h2>Engineering skills.</h2>
+        <div className="technology-container">
+          <div className="technology-header">
+            <h2>Technologies.</h2>
+          </div>
+          <div className="technology-icons">{icons}</div>
         </div>
-
-        <div className="skill-cards">
-          <div className="skill-card">
-            <img
-              src="https://burtscriptor.github.io/portfolio-images/web-development.png"
-              alt="Icon for web development"
-            />
-            <p>Web Development</p>
-          </div>
-
-          <div className="skill-card">
-            <img
-              src="https://burtscriptor.github.io/portfolio-images/server-side.png"
-              alt="Icon for communication"
-            />
-            <p>Server Side Construction</p>
-          </div>
-          <div className="skill-card">
-            <img
-              src="https://burtscriptor.github.io/portfolio-images/mobile.png"
-              alt="Icon for collaboration"
-            />
-            <p>Mobile App Development</p>
-          </div>
-          <div className="skill-card">
-            <img
-              src="https://burtscriptor.github.io/portfolio-images/debugging.png"
-              alt="Icon for creative solutions"
-            />
-            <p>Quality Assurance</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="technology-container">
-        <div className="technology-header">
-          <p>WHAT I HAVE EXPERIENCE IN</p>
-          <h2>Technologies.</h2>
-        </div>
-        <div className="technology-icons">{icons}</div>
-      </div>
-    </main>
+      </main>
     </>
 
   );

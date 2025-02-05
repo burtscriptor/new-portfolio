@@ -4,7 +4,7 @@ import { TextureLoader } from "three/src/loaders/TextureLoader";
 import { OrbitControls } from "@react-three/drei";
 import { motion } from "framer-motion-3d";
 import "../styles/CubeAnimation.css";
-const image1 = "https://burtscriptor.github.io/portfolio-images/the_real_bean_beanie.png";
+const image1 = "https://burtscriptor.github.io/portfolio-images/dave_ai_1.png";
 
 const imageUrls = [
   "https://burtscriptor.github.io/portfolio-images/nodejs.png",
